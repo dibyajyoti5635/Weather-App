@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Forecast Dashboard</h1>
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="searchWeather()">Search</button>
+        </div>
+
+        <div class="weather-details">
+            <h2>Current Weather</h2>
+            <div id="currentWeather"></div>
+        </div>
+
+        <div class="forecast-details">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast"></div>
+        </div>
+
+        <div class="unit-toggle">
+            <label>
+                <input type="radio" name="unit" value="metric" checked> Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" value="imperial"> Fahrenheit
+            </label>
+        </div>
+        <br><br>
+        <button onclick="returnToHomePage()">Return to Home Page</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
